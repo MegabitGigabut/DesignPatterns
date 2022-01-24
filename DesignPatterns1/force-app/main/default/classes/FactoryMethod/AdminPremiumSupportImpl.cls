@@ -1,6 +1,4 @@
-public with sharing class AdminPremiumSupportImpl {
-    public AdminPremiumSupportImpl() {
-    }
+public with sharing class AdminPremiumSupportImpl implements IAdminSupport{
 
     public Integer getSLA(){
         return 100;
