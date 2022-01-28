@@ -1,8 +1,8 @@
 public with sharing class AbstractFactory {
     
-    interface IProcessor { void performOperation();}
-    interface IStorage { void storeData();}
-    interface IMonitor {void display();}
+    interface IProcessor { }
+    interface IStorage { }
+    interface IMonitor {}
 
     class LEDMonitor implements IMonitor{
 
@@ -41,9 +41,4 @@ public with sharing class AbstractFactory {
         }
     }
 
-    public interface IComputerFactory{
-        IProcessor getProcessor();
-        IStorage getStorage();
-        IMonitor getMonitor();
-    }
 }
