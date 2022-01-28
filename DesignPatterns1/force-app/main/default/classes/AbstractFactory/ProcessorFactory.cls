@@ -3,7 +3,7 @@ public with sharing class ProcessorFactory {
         IProcessor retVal = null;
 
         if(processorType == 'QuadCore'){
-            retVal = new QuadCore();
+            retVal =(IProcessor) new QuadCore();
         }else if(processorType == 'DualCore'){
             retVal = new DualCore();
         }
